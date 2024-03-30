@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rapid_calc/cgpa.dart';
 
 void main() => runApp(const MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -1045,13 +1046,63 @@ class _GpacalcState extends State<Gpacalc> {
                   const SizedBox(
                     width: 35,
                   ),
-                   Text('GPA : ${output.toStringAsFixed(3)}',
+                   Text('GPA : ${output.toStringAsFixed(2)}',
                       style: const TextStyle(
                           color: Color(0xf02a2a2a),
                           fontSize: 25,
                           fontWeight: FontWeight.bold)),
                 ],
               ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                ElevatedButton(onPressed: (){
+                  g1.text = '';
+                  g2.text = '';
+                  g3.text = '';
+                  g4.text = '';
+                  g5.text = '';
+                  g6.text = '';
+                  g7.text = '';
+                  g8.text = '';
+                  g9.text = '';
+                  g10.text = '';
+                  g11.text = '';
+                  g12.text = '';
+                  g13.text = '';
+                  g14.text = '';
+                  g15.text = '';
+                  g16.text = '';
+
+                  c1.text = '';
+                  c2.text = '';
+                  c3.text = '';
+                  c4.text = '';
+                  c5.text = '';
+                  c6.text = '';
+                  c7.text = '';
+                  c8.text = '';
+                  c9.text = '';
+                  c10.text = '';
+                  c11.text = '';
+                  c12.text = '';
+                  c13.text = '';
+                  c14.text = '';
+                  c15.text = '';
+                  c16.text = '';
+                  tc.text = '';
+                },  style: ElevatedButton.styleFrom(
+                    fixedSize:const Size(92, 60),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(54)),
+                    elevation: 10,
+                    padding:const EdgeInsets.all(15)),
+                  child: const Text(
+                    'Clear',
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),),
+              ],),
               const SizedBox(height: 30),
             ],
           ),
